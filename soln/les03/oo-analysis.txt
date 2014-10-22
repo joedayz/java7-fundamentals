@@ -1,0 +1,46 @@
+The asterisk (*) denotes attributes that are also objects.
+
+
+Player
+--------
+id
+name
+number
+*Team
+
+
+
+Team
+--------
+id
+name
+*Player(s)
+--------
+Get ranked player
+
+
+Game
+--------
+id
+team one score
+team two score
+*Goal
+--------
+Get results
+
+
+League
+--------
+*Teams
+*Games
+--------
+Get game results
+Get ranked teams
+
+
+Goal
+--------
+id
+*Team
+*Player
+time

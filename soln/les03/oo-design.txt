@@ -1,0 +1,47 @@
+
+Player
+--------
+id
+name
+number
+team
+
+
+
+Team
+--------
+id
+name
+players[ ]
+--------
+getRankedPlayers()
+
+
+
+Game
+--------
+id
+team one score
+team two score
+goals[ ]
+--------
+getResults()
+
+
+
+League
+--------
+teams[ ]
+games[ ]
+--------
+getGameResults()
+getRankedTeams()
+
+
+
+Goal
+--------
+id
+team
+player
+time
