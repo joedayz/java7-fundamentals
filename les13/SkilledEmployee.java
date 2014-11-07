@@ -13,8 +13,21 @@ import java.util.ArrayList;
 public class SkilledEmployee extends Employee{
     public ArrayList skillList = new ArrayList();
     
-    public void setSkill(String skill){
-        skillList.add(skill);
+    public void setSkill(String skill) throws InvalidSkillException{
+        //skillList.add(skill);
+        Boolean valid = true;
+        if(skill == null | skill.length() <5){
+            valid = false;
+        }else{
+            valid = true;
+        }
+        if(!valid){
+            throw new InvalidSkillException(skill +
+                    " is not valid for the " +
+                    this.getJobTitle() + " job.");
+        }else{
+            skillList.add(skill);
+        }
     }
     
     public ArrayList getSkills(){
